@@ -25,32 +25,74 @@
 			flex-direction:column;
 		}
 
+		.alignRight{
+			display: flex;
+			justify-content: flex-end;
+		}
+
 		.container{
 			width: 90%;
+			text-align: justify;
 		}
 
 		.colorDarkRed{
-			color: rgb(175, 2, 2);
+			color: #e60000;
 		}
 
 		.bold{
 			font-weight: bold;
 		}
 
+		.underline{
+			text-decoration: underline;
+		}
+
 		.fontSize-1{
-			font-size: 1.1rem;
+			font-size: 1.2rem;
 		}
 
 		.indent{
 			text-indent: 2em;
 		}
 
+		.indent-1{
+			text-indent: 1em;
+		}
+
+		.indent-s{
+			text-indent: 0.5em;
+		}
+
 		.neg-indent{
 			text-indent: -1em;
 		}
 
+		.neg-indent-2{
+			text-indent: -2em;
+		}
+
+		.neg-indent-25{
+			text-indent: -2.5em;
+		}
+
 		.padLeft{
-			padding-left: 5%;
+			padding-left: 2rem;
+		}
+
+		.padLeft-1{
+			padding-left: 1rem;
+		}
+
+		.padLeft-3{
+			padding-left: 3rem;
+		}
+
+		.padLeft-35{
+			padding-left: 3.5rem;
+		}
+
+		.top-margin-s{
+			margin-top: 0.5rem;
 		}
 	</style>
 	<title>花蓮慈濟癌症中心小幫手Line Bot使用者條款</title>
@@ -58,50 +100,324 @@
 <body>
 	<div class="title">花蓮慈濟癌症中心小幫手 Line Bot 使用者條款</div>
 	<br/>
+	
 	<div class="flex-center ">
 		<div class="container">
-			<div class="indent">歡迎您使用「花蓮慈濟癌症中心小幫手 Line  Bot」（以下簡稱「本服務」）。為了讓您能夠更安心地使用各項服務與資訊，特此向您說明本服務的功能、隱私權政策等，以保障您的權益。一旦您同意本條款，即表示您已閱讀、了解並接受本條款之所有內容及其後之修改變更，且同意本服務在本條款範圍內蒐集、使用及揭露您的個人資料。 
-			</div>
-			<br/>
+			<div class="alignRight">上次更新日期：2024/4/1</div>
+			<br/>	
 			<div class="indent">
+				<span>歡迎您使用「花蓮慈濟癌症中心小幫手 Line  Bot」（以下簡稱「本服務」）。為了讓您能夠更安心地使用各項服務與資訊，特此向您說明本服務的功能、隱私權政策等，以保障您的權益。</span>
+				<span class="bold underline">一旦您同意本條款，即表示您已閱讀、了解並接受本條款之所有內容及其後之修改變更，且同意本服務在本條款範圍內蒐集、使用及揭露您的個人資料。</span>
+				
+			</div>
+			<!-- <br/> -->
+			<div class="indent top-margin-s">
 				若您為未滿 18 歲之未成年人，應請您的父母或監護人閱讀、了解並同意本條款之所有內容及其後之修改變更，方得使用本服務；當您使用本服務時，即推定您的父母或監護人已閱讀、了解並同意接受本服務條款之所有內容及其後之修改變更，且同意本服務在本條款範圍內蒐集、使用及揭露您的個人資料。 
 				
 			</div>
-			<br/>
-			<div class="indent colorDarkRed bold">
-				*提醒您，本服務必要時可能將您提供之對話內容傳輸至第三方，請盡量不要將「敏感性個人資訊」傳輸至本服務之 Line 對話中，包含但不限於有關醫療、基因、健康檢查之個人資料。 
+			<!-- <br/> -->
+			<div class="indent top-margin-s colorDarkRed bold">
+				*提醒您，本服務必要時可能將您提供之對話內容傳輸至第三方，請盡量不要將「敏感性個人資訊」傳輸至本服務之 Line 對話中，包含但不限於有關醫療、基因、健康檢查之個人資料。
 			</div>
 			<br/>
-			<div class="indent">請您詳細閱讀以下內容：</div>
+			<div >請您詳細閱讀以下內容：</div>
 			<br/>
 			<div class="bold fontSize-1" >一、本服務之功能與目的 </div>
 			<br/>
 			<div class="neg-indent padLeft">
 				<span >1. </span>
-				<span>個人健康狀況管理：本服務將依循您的查詢，提供如提供篩檢報告、篩檢資格、預約領藥提醒、連續處方、繳交糞便檢體提醒、預約乳房攝影日期等資訊。</span>
+				<span>個人健康狀況管理：本服務將依循您的查詢，由花蓮慈濟醫院直接提供給您如提供篩檢報告、篩檢資格、預約領藥提醒、連續處方、繳交糞便檢體提醒、預約乳房攝影日期等資訊。</span>
 			</div>
-			<br/>
-			<div class="neg-indent padLeft">
+
+			<div class="neg-indent padLeft top-margin-s">
 				<span >2. </span>
-				<span>健康狀況問答：本服務將依循您提供的資訊、對話內容，提供您相關之醫學文章、內容、參考影片等資訊。於必要時，本服務將由第三方 Open AI 生成工具回答您所詢問之內容。</span>
+				<span>健康狀況問答：本服務將依循您提供的資訊、對話內容，提供您相關之醫學文章、內容、參考影片等資訊。於必要時，本服務將由</span>
+				<span class="bold underline">第三方 Open AI </span>
+				<span>生成工具回答您所詢問之內容。</span>
 			</div>
-			<br/>
-			<div class="neg-indent padLeft">
+			
+			<div class="neg-indent padLeft top-margin-s">
 				<span >3. </span>
 				<span>預約掛號門診確認與提醒：本服務設計有串接掛號機制，您可點擊本服務回傳建議看診科別連接至花蓮慈濟醫院之預約門診掛號功能。</span>
 			</div>
-			<br/>
-			<div class="neg-indent padLeft">
+			
+			<div class="neg-indent padLeft top-margin-s">
 				<span >4. </span>
 				<span>提供相關之公共衛生政策、醫療健康資訊。</span>
 			</div>
 			<br/>
 			<div class="bold fontSize-1" >二、隱私權政策</div>
 			<br/>
-			<div class="indent">您的隱私權保護對本服務而言極為重要，所以我們規劃了您使用本服務的隱私權政策，包含：本服務蒐集您個人資料之目的、方式、範圍及使用與揭露，以及本服務據以蒐集、使用您個人資料的法律基礎。一旦您同意本條款，即表示您同意本服務於條款範圍內蒐集、使用及揭露您的資料；非經您的同意或法律規定，本服務不會對外公布您本條款範圍以外之資料。
+			<div class="indent">
+				<span>您的隱私權保護對本服務而言極為重要，所以我們規劃了您使用本服務的隱私權政策，包含：本服務蒐集您個人資料之目的、方式、範圍及使用與揭露，以及本服務據以蒐集、使用您個人資料的法律基礎。</span>
+				<span class="underline">一旦您同意本條款，即表示您同意本服務於條款範圍內蒐集、使用及揭露您的資料；非經您的同意或法律規定，本服務不會對外公布您本條款範圍以外之資料。</span>
 			</div>
 			<br/>
-			<div class="bold">1. 相關法律依據：</div>
+			<div class="bold">1. 相關法律依據：</div>			
+			<div class="neg-indent-2 padLeft-3 top-margin-s">1.1.個人資料蒐集、告知之法律依據</div>
+			<div class="neg-indent padLeft-3 top-margin-s">
+				<span >•  </span>
+				<span class="bold">個人資料保護法第 6 條第 1 項但書第 6 款</span>
+				<span>：「有關病歷、醫療、基因、性生活、健康檢查及犯罪前科之個人資料，不得蒐集、處理或利用。但有下列情形之一者，不在此限：六、經當事人書面同意。」</span>
+			</div>
+			<div class="neg-indent-2 padLeft-3 top-margin-s">1.2.電子簽署同意之法律依據</div>
+			<div class="neg-indent padLeft-3 top-margin-s">
+				<span >•  </span>
+				<span class="bold">個人資料保護法施行細則第 14 條</span>
+				<span>：「本法第六條第一項但書第六款、第十一條第二項及第三項但書所定當事人書面同意之方式，依電子簽章法規定，得以電子文件為之。」</span>
+			</div>
+			<div class="neg-indent padLeft-3 top-margin-s">
+				<span >•  </span>
+				<span class="bold">電子簽章法第 2 條第 1 款</span>
+				<span>款：「本法用詞定義如下：一、電子文件：指文字、聲音、圖片、影像、符號或其他資料，以電子或其他以人之知覺無法直接認識之方式，所製成足以表示其用意之紀錄，而供電子處理之用者。」</span>
+			</div>
+			<div class="neg-indent padLeft-3 top-margin-s">
+				<span >•  </span>
+				<span class="bold">電子簽章法第 4 條第 1、2 項</span>
+				<span>：「經相對人同意者，得以電子文件為表示方法」、「依法令規定應以書面為之者，如其內容可完整呈現，並可於日後取出供查驗者，經相對人同意，得以電子文件為之。」</span>
+			</div>
+			<div class="top-margin-s">又依照個人資料保護法第 6 條第 2 項準用同法第 8 條的規定，本服務謹告知您事項如下： </div>
+			<br/>
+			<div class="bold">2.  蒐集機關之名稱：</div>
+			<div class="bold padLeft-1 top-margin-s">佛教慈濟醫療財團法人花蓮慈濟醫院（下稱花蓮慈濟醫院）</div>
+			<br/>
+			<div class="bold">3.  個人資料蒐集之目的：</div>
+			<div class="indent  top-margin-s">蒐集之目的在於提供使用者本服務，例如依您的查詢提供關於個人健康狀況、衛生教育、門診資訊，並進行自動導診服務、健康問答、智能應答服務，及調查、統計與研究分析。</div>
+			<br/>
+
+			<div class="bold">4.  個人資料蒐集之類別：</div>
+			<div class="indent top-margin-s">
+				<span>本服務將會蒐集您的個人資料，</span>
+				<span class="underline">包含但不限於</span>
+				<span>以下範圍：</span>
+			</div>
+			<div class="neg-indent-2 padLeft-3 top-margin-s">
+				<span >4.1.</span>
+				<span>辨識個人者：如使用者之 Line User ID；</span>
+			</div>
+			<div class="neg-indent-2 padLeft-3 top-margin-s">
+				<span >4.2.</span>
+				<span>個人描述：如使用者所輸入使用者本身、其家人之性別、暱稱、出生年月日等；</span>
+			</div>
+			<div class="neg-indent-2 padLeft-3 top-margin-s">
+				<span >4.3.</span>
+				<span>健康紀錄：如使用者所輸入使用者本身、其家人之病徵、病史等；</span>
+			</div>
+			<div class="neg-indent-2 padLeft-3 top-margin-s">
+				<span >4.4.</span>
+				<span>個人健康狀況檔案：您於花蓮慈濟醫院留存之個人資料檔案，如您的篩檢報告（報告項目、結果、建議、去識別化之姓名）、篩檢資格等（可否篩檢項目、前一次執行篩檢年份）、預約掛號資料（看診日期、科別、序號）、連續處方(開立處方科別、看診日期、預約領藥日期)、領取糞篩盒日期、預約乳房攝影日期；</span>
+			</div>
+			<div class="neg-indent-2 padLeft-3 top-margin-s">
+				<span >4.5.</span>
+				<span>使用者輸入之問題；</span>
+			</div>
+			<div class="neg-indent-2 padLeft-3 top-margin-s">
+				<span >4.6.</span>
+				<span>其他：本服務所需蒐集的資訊，可能依需求隨時增加、調整。</span>
+			</div>
+			<br/>
+
+			<div class="bold">5.  個人資料利用之期間：</div>
+			<div class="indent top-margin-s">
+				<span>使用者點選「同意」並開始使用本服務起至本服務依相關法令規定或政府機關調查指示而保存個人資料之期間為止。</span>
+			</div>
+			<div class="neg-indent-2 padLeft-3 top-margin-s">
+				<span >5.1.</span>
+				<span>使用者於期間屆至前，得依照個人資料保護法第 3 條規定，對於您所提供之資料，您可以查詢或請求閱覽、製給複製本、請求補充或更正、請求停止蒐集、處理或利用、請求刪除。您可以隨時撥打花蓮慈濟癌症醫學中心專線 03-8561825 #13112 通知本服務行使上述權利。但您請求補充、更正、刪除時，本服務有權依法令規定或必要性及正確性與正當性審酌是否同意。</span>
+			</div>
+			<!-- <div class="padLeft-3 top-margin-s">
+				<span>5.1.1.使用者兩年未使用本服務；或</span>
+			</div>
+			<div class="padLeft-3 top-margin-s">
+				<span>5.1.2 本服務依相關法令規定或政府機關調查指示而保存個人資料之期間。</span>
+			</div> -->
+			<div class="neg-indent-2 padLeft-3 top-margin-s">
+				<span >5.2.</span>
+				<span>關於使用者透過 Line 與本服務所進行之對話，將儲存於 Line 的雲端服務伺服器及 Google Cloud SQL（臺灣彰化縣內），該儲存於 Line 雲端服務伺服器之對話內容，將直至使用者刪除 Line 帳號時才會刪除；儲存於Google Cloud SQL 之對話內容，將保存至花蓮慈濟癌症醫學中心本服務專案終止時。</span>
+			</div>
+			<!-- <div class="neg-indent-2 padLeft-3 top-margin-s">
+				<span >5.3.</span>
+				<span>.關於使用者透過 Line 與本服務所進行之對話，將儲存於 Line 的雲端服務伺服器，該儲存於 Line 雲端服務伺服器之對話內容，將直至使用者刪除 Line 帳號時才會刪除。</span>
+			</div> -->
+			<br/>
+			<div class="bold">6.  個人資料利用之地區：</div>
+			<div class="indent  top-margin-s">臺灣地區（包含臺灣本島、澎湖、金門及馬祖）、第三方 Open AI 伺服器所在地（英國）、Google YouTube 伺服器所在地。			
+			</div>
+
+			<br/>
+			<div class="bold">7.  個人資料利用之對象：</div>
+			<div class="indent  top-margin-s">為提供使用者本服務所必要之參與人員，包括但不限於花蓮慈濟醫院委託蒐集及處理使用者資料之服務廠商、服務廠商之委外廠商。			
+			</div>
+
+			<br/>
+			<div class="bold">8.  個人資料利用之方式：</div>
+			<div class="neg-indent-2 padLeft-3 top-margin-s">
+				<span >8.1.</span>
+				<span>根據使用者操作功能，與本服務系統連線，以完成指定動作；</span>
+			</div>
+			<div class="neg-indent-2 padLeft-3 top-margin-s">
+				<span >8.2.</span>
+				<span>在服務伺服器上，進行資料統計分析，以優化服務內容，並提供個人化資訊與服務；</span>
+			</div>
+			<div class="neg-indent-2 padLeft-3 top-margin-s">
+				<span >8.3.</span>
+				<span>改善本服務；</span>
+			</div>
+			<div class="neg-indent-2 padLeft-3 top-margin-s">
+				<span >8.4.</span>
+				<span>與您溝通，包括向您發送我們的服務、活動、門診等相關資訊；</span>
+			</div>
+			<div class="neg-indent-2 padLeft-3 top-margin-s">
+				<span >8.5.</span>
+				<span>開發新的計劃和服務；</span>
+			</div>
+			<div class="neg-indent-2 padLeft-3 top-margin-s">
+				<span >8.6.</span>
+				<span>遵守法律義務和法律程序，並保護我們、合作公司、附屬公司或其他第三方的權利、隱私、安全和財產。</span>
+			</div>
+			<div class="neg-indent-2 padLeft-3 top-margin-s">
+				<span >8.7.</span>
+				<span>為了促進癌症及相關公共衛生政策研究，衛生主管機關人員或經主管機關授權之人員，有權得檢視本服務資料，做為公共衛生、統計研究之用。惟相關統計或發表均會以匿名的方式處理，不會顯示您的身份資訊。</span>
+			</div>
+
+			<br/>
+			<div class="bold">9.  個人資訊之揭露：</div>
+			<div class="indent top-margin-s">除本服務另有規定外，本服務不會提供、交換、出租或出售任何使用者的個人資料給他人，但在下列情況，我們可能會向第三方提供您的個人資訊，恕不另行通知您，除非法律要求：</div>
+			<div class="neg-indent-2 padLeft-3 top-margin-s">
+				<span >9.1.</span>
+				<span>為免除使用者生命、身體、自由或財產上危險。</span>
+			</div>
+			<div class="neg-indent-2 padLeft-3 top-margin-s">
+				<span >9.2.</span>
+				<span>與公務機關或學術研究機構合作，基於公共利益為統計或學術研究而有必要，且資料經過提供者處理或蒐集者依其揭露方式無從識別特並之當事人。</span>
+			</div>
+			<div class="neg-indent-2 padLeft-3 top-margin-s">
+				<span >9.3.</span>
+				<span>當使用者之行為，違反本條款或可能損害或妨礙本服務與其他使用者權益或導致任何人遭受損害時，經我們分析揭露使用者的個人資料是為了辨識、聯絡或採取法律行動所必要者。</span>
+			</div>
+			<div class="neg-indent-2 padLeft-3 top-margin-s">
+				<span >9.4.</span>
+				<span>有利於使用者的權益。</span>
+			</div>
+			<div class="neg-indent-2 padLeft-3 top-margin-s">
+				<span >9.5.</span>
+				<span class="bold ">供應商和服務提供者：</span>
+				<span>為了幫助我們滿足業務營運需求並執行某些服務和功能，我們可能會向供應商和服務提供者提供個人資訊，包括但不限於客戶服務供應商（</span>
+				<span class="bold underline">奧啟迪科技股份有限公司</span>
+				<span>）、雲端服務（</span>
+				<span class="bold underline">Google Cloud Platform</span>
+				<span>）、AI 生成工具（
+				<span class="bold underline">Azure Open AI</span>
+				<span>）、</span>
+				<span class="bold underline">Google YouTube</span>
+				<span>和其他資訊科技提供者等。</span>
+				<span class="bold underline">根據我們的指示，前開對象僅在履行對我們的職責的過程中才會存取、處理或儲存個人資訊。</span>
+			</div>
+
+			<br/>
+			<div class="bold">10.資訊安全：</div>
+			<div class="neg-indent-2 padLeft-3 top-margin-s">
+				<span >10.1.</span>
+				<span>個人資料的保護：</span>				
+			</div>
+			<div class="indent padLeft-35 top-margin-s">
+				<span>本服務在處理使用者提供之個人資料過程中，將遵守隱私權相關法規與內部作業規範，並使用各種安全性技術及必要防護措施，保護您的個人資料免於未經授權的存取、使用或揭露。</span>
+			</div>
+			<div class="neg-indent-25 padLeft-35 top-margin-s">
+				<span >10.2.</span>
+				<span>您的資料將會儲存在 Google  Cloud  SQL，</span>
+				<span class="bold underline">該伺服器將位於臺灣彰化縣內。</span>				
+			</div>
+			<div class="neg-indent-25 padLeft-35 top-margin-s">
+				<span >10.3.</span>
+				<span>於一般連線時，系統伺服器會自動記錄您的路徑，包括您使用連線設備的 IP 位址、使用時間、使用的作業系統、瀏覽紀錄等。這些紀錄僅作為本服務精進服務的內部參考，不會對外公布。</span>				
+			</div>
+			<div class="neg-indent-25 padLeft-35 top-margin-s">
+				<span >10.4.</span>
+				<span>個人資訊的保存期限：</span>				
+			</div>
+			<div class="indent padLeft-35 top-margin-s">
+				<span>本服務所蒐集的您所有個人資料，僅</span>
+				<span class="underline">自您「最後一次使用服務」起保存 5 年</span>
+				<span>；年期限屆滿時，本服務將銷毀相關電磁紀錄，且不會保留任何書面資料。</span>
+			</div>
+
+			<br/>
+			<div class="bold">11.蒐集利用個資的同意權：</div>
+			<div class="neg-indent-25 padLeft-35 top-margin-s">
+				<span >11.1.</span>
+				<span class="bold">跨境傳輸：您於本服務中輸入之文字可能將被傳輸到台灣以外之地區(如將您的對話內容傳輸至 Azure OpenAI 生成答案，其伺服器位於英國；或將您的對話內容傳輸至 Google YouTube 提供健康問題之參考影片，其伺服器可能位於臺灣境外)。</span>
+				<span class="bold colorDarkRed">一旦您同意本條款，即表示您已閱讀、了解並接受本條款之所有內容及其後之修改變更，且同意本服務在本條款範圍內跨境傳輸您的個人資料；</span>				
+			</div>
+			<div class="neg-indent-25 padLeft-35 top-margin-s">
+				<span >11.2.</span>
+				<span class="underline">您有權禁止或部份禁止</span>
+				<span>本服務存取、利用您的個人資料；縱使</span>
+				<span  class="underline">同意後，您仍有權隨時撤回該等同意或補充、更正、刪除您的個人資訊，請撥打花蓮慈濟癌症醫學中心專線 03-8561825 #13112 通知本服務行使上述權利</span>
+				<span>。您拒絕本服務之存取利用權限後，本服務將銷毀相關電磁紀錄，且不會保留任何書面資料，以保障您的資訊安全。提醒您，若您禁止本服務存取、利用您的個人資料，可能導致您亦因此無法再完整使用本服務、或存取任何先前儲存於您帳戶中的資訊內容。</span>
+				
+			</div>
+			<br/>
+			<div class="bold">12.本隱私權政策的變更：</div>
+			<div class="indent  top-margin-s"> 依本服務的目的，以上隱私權政策可能因應需求隨時調整。本隱私權政策有變動時，我們將修訂聲明最前面的「上次更新日期」供您對照，且如果政策中有重要的更動，涉及您個人資料的保護，本服務將在隱私權政策變動前，將更改的部分張貼於公告。為了保障您的權益，歡迎您定期檢視，以了解本服務的最新隱私權政策。
+			</div>
+
+			<br/>
+			<div class="bold">13.本隱私權政策的適用範圍：</div>
+			<div class="neg-indent-25 padLeft-35 top-margin-s">
+				<span >13.1.</span>
+				<span class="bold">本隱私權政策</span>
+				<span class="bold underline">不適用於</span>	
+				<span class="bold">本服務中提供您點選進入之外部網頁：</span>						
+			</div>
+			<div class="indent padLeft-35 top-margin-s">
+				<span>本服務中可能會提供相關連結，供您點選進入其他外部網頁，但請注意，該等外部網站的隱私權政策可能與本服務並不相同，請您自行參考該網站的隱私權政策。</span>
+			</div>
+			<div class="neg-indent-25 padLeft-35 top-margin-s">
+				<span >13.2.</span>
+				<span class="bold">本隱私權政策</span>
+				<span class="bold underline">不適用於</span>	
+				<span class="bold">非本服務所委託或參與管理的人員：</span>						
+			</div>
+			<div class="indent padLeft-35 top-margin-s">
+				<span>除了本服務開發公司之相關人員，將受本隱私權政策要求以外，其他人員（例如本服務所設置的 Google 雲端伺服器維護人員等）並不受此規範。</span>
+			</div>
+
+			<br/>
+			<div class="bold fontSize-1" >三、準據法與合意管轄</div>
+			<br/>
+			<div class="indent">
+				本使用者條款之解釋與適用，以及與本使用者條款有關的所有爭議，除法律另有規定者外，均應依照中華民國法律予以處理，並以臺灣花蓮地方法院為第一審管轄法院。
+			</div>
+
+			<br/>
+			<div class="bold fontSize-1" >四、免責聲明</div>
+			<br/>
+			<div class="neg-indent padLeft">
+				<span >1. </span>
+				<span class="bold underline">本服務所提供或刊載之醫學文章、內容、訊息、掛號資訊等僅做為參考使用，不具有醫療或診療目的，亦不得取代任何專業醫療諮詢或診斷或適用於任何醫療緊急狀況、診療或疾病及症狀治療。</span>
+				<span>如有任何個人健康或醫療相關問題及疑問，建議您應立即諮詢醫師。若是醫療緊急情況，請馬上撥打 119 或當地緊急救護電話送醫急救。本服務也可能會蒐集、處理及利用您的個資及進行的對話資料，包括但不限於 LineID、暱稱、出生年月日、性別、病徵及接種紀錄等。上述資料只用於本服務或改善本服務品質，不會用於其他用途。本服務保留無須事前通知隨時修改資訊內容之權利。本服務所提供相關網站資訊僅供參考。本服務並未推薦或為任何醫師或醫學文章提供者背書。本服務不負任何法律責任。若提供資訊如有侵權或不符合事實者，請即時撥打花蓮慈濟癌症醫學中心專線 03-8561825 #13112 告知。</span>
+			</div>
+			<br/>
+			<div class="neg-indent padLeft">
+				<span >2. </span>				
+				<span>本服務的系統設於 Google 雲端伺服器，然因 Google 雲端伺服器之資訊安全保護在本服務控制範圍以外，故本服務就 Google 之資安問題概不負責。</span>
+			</div>
+
+
+			<br/>
+			<div class="bold fontSize-1" >五、其他</div>
+			<br/>
+			<div class="neg-indent padLeft">
+				<span >1. </span>
+				<span>本服務保有隨時修正本使用者條款之權利。如果政策中有重要的更動，本服務將在變動使用者條款前，將更改的部分張貼於本服務之貼文公告。</span>
+			</div>
+			<br/>
+			<div class="neg-indent padLeft">
+				<span >2. </span>
+				<span>若您對本使用者條款有任何疑問或建議，請您撥打花蓮慈濟癌症醫學中心專線03-8561825 #13112聯絡。</span>
+			</div>
+			<br/>
 		</div>
 		
 	</div>
