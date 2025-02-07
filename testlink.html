@@ -24,42 +24,25 @@ a img {
 
 -->
 </style>
+<script>
+        // JavaScript 函數，用於獲取 URL 中的參數
+        function getParameterByName(name) {
+            const urlParams = new URLSearchParams(window.location.search);
+            return urlParams.get(name);
+        }
 
+        // 在 DOM 內容加載完成後執行
+        document.addEventListener('DOMContentLoaded', function() {
+            const paraValue = getParameterByName('para');
+            if (paraValue !== null) {
+                document.getElementById('para-display').innerText = `Parameter value: ${paraValue}`;
+            }
+        });
+    </script>
 </head>
 <body>
-window.onload = function()
-	{
-	 <script>
-
-            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
-            var appStoreUrl = '';
-
-            if (/android/i.test(userAgent)) {
-                appStoreUrl = 'https://play.google.com/store/apps/details?id=selfiesign.thinkcloud.com.selfiesign.pat&hl=en_US&pli=1';
-            } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
-                appStoreUrl = 'https://apps.apple.com/us/app/example-app/id123456789';
-            } else {
-                appStoreUrl = 'https://www.google.com';
-            }
-
-            var start = new Date().getTime();
-            var interval = setInterval(function() {
-                var now = new Date().getTime();
-                if (now - start > 1000) {
-                    clearInterval(interval);
-                    window.location = appStoreUrl;
-                }
-            }, 100);
-
-            window.location = 'nhiapp://nhi/vcard';
-
-            setTimeout(function() {
-                clearInterval(interval);
-            }, 1500);
-        };
-    </script>
-	}
-
+ <h1>Parameter Display</h1>
+    <p id="para-display">No parameter found.</p>
    
 </body>
 </html>
