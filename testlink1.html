@@ -3,6 +3,7 @@
 <head>
 <!-- <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /> -->
 <!-- <meta http-equiv='refresh' content='0; URL=nhiapp://nhi/vcard'> -->
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>IIS Windows</title>
 <style type="text/css">
 <!--
@@ -43,22 +44,22 @@ a img {
 	            } else {
 	                appStoreUrl = 'https://www.google.com';
 	            }
-	
-	            var start = new Date().getTime();
-	            var interval = setInterval(function() {
-	                var now = new Date().getTime();
-	                if (now - start > 2000) {
-	                    clearInterval(interval);
-	                    window.location = appStoreUrl;
-	                }
-	            }, 100);
+		    window.location.href = appStoreUrl
+	            //var start = new Date().getTime();
+	            //var interval = setInterval(function() {
+	            //    var now = new Date().getTime();
+	            //    if (now - start > 2000) {
+	            //        clearInterval(interval);
+	            //        window.location = appStoreUrl;
+	            //    }
+	            //}, 100);
 	
 	            //window.location = 'nhiapp://nhi/vcard';
 		    //window.location = 'thinkcloud://';
 	
-	            setTimeout(function() {
-	                clearInterval(interval);
-	            }, 2000);
+	            //setTimeout(function() {
+	            //    clearInterval(interval);
+	            //}, 2000);
 	        
 	 }
 	</script>
