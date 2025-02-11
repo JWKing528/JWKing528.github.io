@@ -65,14 +65,14 @@ a img {
 		// 檢查頁面是否變為不可見
 	            document.addEventListener(visibilityChange, function() {
 	                if (!document[hidden] && Date.now() - now < 2000) {
-	                    window.location.href = storeLink;
+	                    window.location.href = appStoreUrl;
 	                }
 	            }, false);
 	
 	            // 如果頁面一直可見，則在2秒後導向應用商店
 	            setTimeout(() => {
 	                if (!document[hidden] && Date.now() - now >= 2000) {
-	                    window.location.href = storeLink;
+	                    window.location.href = appStoreUrl;
 	                }
 	            }, 2000);
 		
