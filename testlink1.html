@@ -36,6 +36,7 @@ a img {
 
 	            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 	            var appStoreUrl = '';
+		    var appLink = "nhiapp://nhi/vcard";
 	
 	            if (/android/i.test(userAgent)) {
 	                appStoreUrl = 'https://play.google.com/store/apps/details?id=selfiesign.thinkcloud.com.selfiesign.pat&hl=en_US&pli=1';
@@ -44,7 +45,18 @@ a img {
 	            } else {
 	                appStoreUrl = 'https://www.google.com';
 	            }
-		    window.location.href = appStoreUrl
+
+		    // 嘗試開啟 APP
+	            const now = Date.now();
+	            window.location.href = appLink;
+	
+	            // 2 秒後檢查是否成功開啟 APP，否則導向商店
+	            setTimeout(() => {
+	                if (Date.now() - now < 2000) {
+	                    window.location.href = appStoreUrl;
+	                }
+	            }, 1500);
+		
 	            //var start = new Date().getTime();
 	            //var interval = setInterval(function() {
 	            //    var now = new Date().getTime();
