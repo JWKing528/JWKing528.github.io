@@ -37,7 +37,19 @@ a img {
 	            var userAgent = navigator.userAgent || navigator.vendor || window.opera;
 	            var appStoreUrl = '';
 		    var appLink = "nhiapp://nhi/vcard";
-	
+
+		let hidden, visibilityChange; 
+	            if (typeof document.hidden !== "undefined") {
+	                hidden = "hidden";
+	                visibilityChange = "visibilitychange";
+	            } else if (typeof document.msHidden !== "undefined") {
+	                hidden = "msHidden";
+	                visibilityChange = "msvisibilitychange";
+	            } else if (typeof document.webkitHidden !== "undefined") {
+	                hidden = "webkitHidden";
+	                visibilityChange = "webkitvisibilitychange";
+	            }
+		
 	            if (/android/i.test(userAgent)) {
 	                appStoreUrl = 'https://play.google.com/store/apps/details?id=selfiesign.thinkcloud.com.selfiesign.pat&hl=en_US&pli=1';
 	            } else if (/iPad|iPhone|iPod/.test(userAgent) && !window.MSStream) {
@@ -49,13 +61,27 @@ a img {
 		    // 嘗試開啟 APP
 	            const now = Date.now();
 	            window.location.href = appLink;
-	
-	            // 2 秒後檢查是否成功開啟 APP，否則導向商店
-	            setTimeout(() => {
-	                if (Date.now() - now < 2000) {
-	                    window.location.href = appStoreUrl;
+
+		// 檢查頁面是否變為不可見
+	            document.addEventListener(visibilityChange, function() {
+	                if (!document[hidden] && Date.now() - now < 2000) {
+	                    window.location.href = storeLink;
 	                }
-	            }, 1500);
+	            }, false);
+	
+	            // 如果頁面一直可見，則在2秒後導向應用商店
+	            setTimeout(() => {
+	                if (!document[hidden] && Date.now() - now >= 2000) {
+	                    window.location.href = storeLink;
+	                }
+	            }, 2000);
+		
+	            // 2 秒後檢查是否成功開啟 APP，否則導向商店
+	            //setTimeout(() => {
+	            //    if (Date.now() - now < 2000) {
+	            //        window.location.href = appStoreUrl;
+	            //    }
+	            //}, 1500);
 		
 	            //var start = new Date().getTime();
 	            //var interval = setInterval(function() {
